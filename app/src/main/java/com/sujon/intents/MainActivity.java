@@ -18,9 +18,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void onMyButtonClick(View view){
 //        Toast.makeText(this,"Button click",Toast.LENGTH_SHORT).show();
-        Intent intent = new Intent(MainActivity.this,MainActivity2.class);
-        intent.putExtra(intentVariableName,"WELCOME_TO_SECOND_ACTIVITY");
-        startActivity(intent);
+//        Intent intent = new Intent(MainActivity.this,MainActivity2.class);
+//        intent.putExtra(intentVariableName,"WELCOME_TO_SECOND_ACTIVITY");
+//        startActivity(intent);
+        Intent myBroadcastIntent = new Intent();
+        myBroadcastIntent.setAction("com.sujon.intents");
+        myBroadcastIntent.setFlags(Intent.FLAG_INCLUDE_STOPPED_PACKAGES);
+        sendBroadcast(myBroadcastIntent);
     }
 
 }
