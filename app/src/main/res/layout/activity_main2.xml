@@ -8,10 +8,11 @@
         tools:context=".MainActivity2">
 
     <TextView
-            android:text="Second Activity"
+            android:text="Welcome to Second Activity"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/textView2"
-            android:textSize="50sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/first_text_view"
+            android:textSize="30sp"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
