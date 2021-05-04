@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 //        intent.putExtra(intentVariableName,"WELCOME_TO_SECOND_ACTIVITY");
 //        startActivity(intent);
         Intent myBroadcastIntent = new Intent();
-        myBroadcastIntent.setAction("com.sujon.intents");
+        myBroadcastIntent.setAction("com.sujon.intents.same");
         myBroadcastIntent.setFlags(Intent.FLAG_INCLUDE_STOPPED_PACKAGES);
         sendBroadcast(myBroadcastIntent);
     }
